@@ -6,8 +6,8 @@
     display: flex;
 }
 #twitcasting {
-    width: 500px;
-    height: 350px;
+    /*width: 500px;
+    height: 350px;*/
     margin: auto;
     flex-wrap: wrap;
     display: flex;
@@ -24,7 +24,7 @@
     order: -1;
 }
 .tab2_class {
-    width: 150px;
+    width: 200px;
     height: 50px;
     background-color: darkgrey;
     line-height: 50px;
