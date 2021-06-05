@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>mahiro.m4a</title>
@@ -17,7 +17,8 @@
     <meta name="viewport" content="width=595, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="css/tw.css">
     <script src="js/ip-ad.js"></script>
-    <script type="text/javascript" src="http://blog.webcreativepark.net/sample/js/36/footerFixed.js"></script>
+    <!--<script src="js/index.js"></script>-->
+    <!--<script type="text/javascript" src="http://blog.webcreativepark.net/sample/js/36/footerFixed.js"></script>-->
     <link rel="stylesheet" href="css/tab.css">
     <meta name="description" content="mahiroと申します。よろしくおねがいします。" />
     <meta property="og:url" content="http://mahiro.ml/" />
@@ -30,7 +31,7 @@
     <meta property="og:locale" content="ja_JP" />
     <link rel="canonical" href="http://mahiro.ml/" />
 </head>
-<body>
+<body id="body">
     <div id="bodycss"></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -78,7 +79,7 @@
                     </div>
                 </div>    
             </div>
-            <div class="grid-item">
+            <!--<div class="grid-item">
                 <div class="clm">
                     <div class="clm-header">Twitter</div><br>
                     <div class="clm-s" id="twitter">
@@ -94,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="grid-item">
                 <div class="clm">
                     <div class="clm-header">配信状況</div><br>
@@ -115,6 +116,25 @@
         </div>
     </div>    
 </div>
+<script>
+    window_load();
+    //ウィンドウサイズ変更時に更新
+    window.onresize = window_load;
+    //サイズの表示
+    function window_load() {
+	    var sW,sH,s;
+	    sW = window.innerWidth;
+	    sH = document.body.clientHeight;
+
+	    s = sH;
+    	document.getElementById("bodycss").innerHTML = "<style>#body{height:" + s + "px;}</style>";
+        console.log(s);
+    }
+    
+    
+
+    
+</script>
 </body>
 <!--CSS完全に理解した！！！！！-->
 </html>
