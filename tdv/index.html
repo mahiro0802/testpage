@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>mahiro.m4a</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script src="js/jquery-1.3.2.min.js"></script>
+    <script src="../js/jquery-1.3.2.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="shortcut icon" href="css/apple.png">
+    <link rel="shortcut icon" href="../css/apple.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta name="viewport" content="width=595, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="css/tw.css">
-    <script src="js/ip-ad.js"></script>
+    <link rel="stylesheet" href="../css/tw.css">
+    <script src="../js/ip-ad.js"></script>
     <!--<script src="js/index.js"></script>-->
     <!--<script type="text/javascript" src="http://blog.webcreativepark.net/sample/js/36/footerFixed.js"></script>-->
-    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="../css/tab.css">
     <meta name="description" content="mahiroと申します。よろしくおねがいします。" />
     <meta property="og:url" content="http://mahiro.ml/" />
     <meta property="og:title" content="mahiro.m4a" />
@@ -30,9 +30,11 @@
     <meta property="og:site_name" content="mahiro.m4a" />
     <meta property="og:locale" content="ja_JP" />
     <link rel="canonical" href="http://mahiro.ml/" />
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/prof.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/prof.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/table.css">
 </head>
 <body id="body">
     <div id="bodycss"></div>
@@ -100,7 +102,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="https://www.twitch.tv/mahiro_m4a" target="_blank">Twitch</a>
                 <a class="dropdown-item" href="https://www.openrec.tv/user/mahiro0802" target="_blank">OPENREC</a>                
-                <a class="dropdown-item" href="https://twitcasting.tv/c:mahiro_jhs" target="_blank">ツイキャス</a>
+                <a class="dropdown-item" href="https://twitcasting.tv/mahiro_m4a" target="_blank">ツイキャス</a>
             </div>
             </li>
             <li class="nav-item active"><a class="nav-link" href="https://blog.mahiroweb.ml/" target="_blank">ブログ</a></li>
@@ -108,50 +110,54 @@
         </div>
         </div>        
 </nav>
-    <div class="back">
+<div class="back">
     <div id="inner">
-        <div class="he">
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 565, "fitWidth": true}'>
-            <div class="grid-item">
-                <div class="clm">
-                    <div class="clm-header">お知らせ</div><br>
-                    <div class="clm-s" id="info" style="overflow: auto;">
-                        <p>2021/02/19：サイトを作成しました。</p>
-                    </div>
-                </div>    
-            </div>
-            <!--<div class="grid-item">
-                <div class="clm">
-                    <div class="clm-header">Twitter</div><br>
-                    <div class="clm-s" id="twitter">
-                        <input type="radio" name="tab_name" id="tab1" checked>
-                        <label class="tab_class" for="tab1">メインアカウント</label>
-                        <div class="content_class">
-                            <a data-chrome="noheader nofooter" class="twitter-timeline" data-lang="ja" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/mahiro_m4a?ref_src=twsrc%5Etfw">Tweets by mahiro_m4a</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                        <input type="radio" name="tab_name" id="tab2">
-                        <label class="tab_class" for="tab2">サブアカウント</label>
-                        <div class="content_class">
-                            <a class="twitter-timeline" data-chrome="noheader nofooter"  data-lang="ja" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/mahiro_jhs?ref_src=twsrc%5Etfw">Tweets by mahiro_jhs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
+        <!--<div class="he">
+        
+        </div>-->
+        <div id="title" style="font-size: 35px;">ツイキャスデスクトップビュアー</div>
+        <div id="ar">
+            <div id="left" class="arr">
+                <div class="in">
+                    <h2>説明</h2>
+                    <p>ツイキャスを見るだけのソフトを作りました。<br>ツイキャスの視聴ページがクソになったらこれを使ってください。<br><br>メリット：デザインが変わらない<br>デメリット：遅延が10秒ほどある</p>
                 </div>
-            </div>-->
-            <div class="grid-item">
-                <div class="clm">
-                    <div class="clm-header">配信状況</div><br>
-                    <div class="clm-s" id="twitcasting">
-                        <input type="radio" name="tab_name2" id="tab3" checked>
-                        <label class="tab2_class" for="tab3">Twitch</label>
-                        <div class="content_class">
-                            <iframe src="https://player.twitch.tv/?channel=mahiro_m4a&parent=mahiro.ml&muted=true" height="225px" width="400px" allowfullscreen="true"></iframe>
-                        </div>
-                        <input type="radio" name="tab_name2" id="tab4">
-                        <label class="tab2_class" for="tab4">ツイキャス</label>
-                        <div class="content_class">
-                            <iframe src="https://twitcasting.tv/c:mahiro_jhs/twplayer" height="225px" width="400px"></iframe>
-                        </div>
-                    </div>
+            </div>
+            <div id="right" class="arr">
+                <div class="in">
+                    <h2>ダウンロード</h2>
+                    <p><table>
+                        <tbody>
+                            <tr>
+                                <th>バージョン</th>
+                                <th>ダウンロードリンク</th>
+                                <th>変更内容</th>
+                            </tr>
+                            <!--<tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>-->
+                            <tr>
+                                <td>var1.02</td>
+                                <td><a href="https://github.com/mahiro0802/twitcasting_desktop_player_source/releases/download/ver1.02/1.02.zip">zip</a></td>
+                                <td>映像の遅延にコメントをあわせる機能を追加しました</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table><br>
+                    (chromeにもWindowsにもウイルス扱いされるのがすごく悲しいです。)
+                </p>
                 </div>
             </div>
         </div>
