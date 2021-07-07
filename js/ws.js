@@ -69,8 +69,8 @@ async function add(comment,name,id,item,itemimg,icon){
     itmim.setAttribute("src",itemimg);
     document.getElementsByClassName("tw-comment-item-attachment")[0].appendChild(itmim);
 }
-function wsconect() { 
-    var ws = new WebSocket(document.getElementById("wsurl").innerHTML + "&gift=1");
+function wsconect(url) { 
+    var ws = new WebSocket(url + "&gift=1");
     ws.addEventListener("message",function (event){
         var par = JSON.parse(event.data);
         var check = document.getElementById("tea_baku").checked;
