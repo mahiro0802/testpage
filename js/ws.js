@@ -73,21 +73,9 @@ function wsconect(url) {
     var ws = new WebSocket(url + "&gift=1");
     ws.addEventListener("message",function (event){
         var par = JSON.parse(event.data);
-        var check = document.getElementById("tea_baku").checked;
-        if(check == 1){
-            if(par[0].type == "gift"){
-                if(par[0].item.name == "お茶爆50" || "お茶爆100" || "お茶爆500"){
-                    add(par[0].message,par[0].sender.name,par[0].sender.screenName,par[0].item.name,par[0].item.image,par[0].sender.profileImage);
-                }
-            }
-        }
-        else{
-            if(par[0].type == "gift"){
+        if(par[0].type == "gift"){
                 add(par[0].message,par[0].sender.name,par[0].sender.screenName,par[0].item.name,par[0].item.image,par[0].sender.profileImage);
-            }
-        }
-        
-        
+        }        
         //document.getElementById("wsstatus").innerHTML = "接続中";
     })
 }
